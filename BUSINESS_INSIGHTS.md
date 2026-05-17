@@ -1,4 +1,4 @@
-# PharmaFlow Analytics — Business Insights
+# PharmaFlow Analytics - Business Insights
 
 > **Analysis period:** January 2023 – December 2025
 > **Dataset:** 10.8M rows across 9 relational tables — 1.94M delivered orders, 384K active patients, 15K SKUs, 1.96M shipments across DE, AT, CH, NL
@@ -34,7 +34,7 @@ Three operational risks were identified: **cold-chain delivery underperformance*
 
 ## 🔍 The 8 Key Findings
 
-### Finding 1 — E-Rezept Adoption Exploded 18× in 24 Months
+### Finding 1 - E-Rezept Adoption Exploded 18× in 24 Months
 
 **The number:** Prescription orders using E-Rezept grew from **5.0% in 2023 → 60.0% in 2024 → 91.9% in 2025**.
 
@@ -44,7 +44,7 @@ Three operational risks were identified: **cold-chain delivery underperformance*
 
 ---
 
-### Finding 2 — E-Rezept Cuts Prescription Processing Time by 71%
+### Finding 2 - E-Rezept Cuts Prescription Processing Time by 71%
 
 **The number:** Average order-to-dispatch processing time:
 - E-Rezept prescriptions: **4.0 hours**
@@ -57,7 +57,7 @@ Three operational risks were identified: **cold-chain delivery underperformance*
 
 ---
 
-### Finding 3 — Top 20% of Patients Drive 47% of Revenue
+### Finding 3 - Top 20% of Patients Drive 47% of Revenue
 
 **The number:** **~76,900 patients (top 20%)** account for **€124.4M (46.7%) of total revenue**.
 
@@ -67,7 +67,7 @@ Three operational risks were identified: **cold-chain delivery underperformance*
 
 ---
 
-### Finding 4 — Chronic Patients Are 3× More Valuable Than Acute
+### Finding 4 - Chronic Patients Are 3× More Valuable Than Acute
 
 **The number:**
 - Chronic patient avg lifetime value: **€1,248.81**
@@ -80,7 +80,7 @@ Three operational risks were identified: **cold-chain delivery underperformance*
 
 ---
 
-### Finding 5 — GLS Underperforms DHL by 20 Percentage Points
+### Finding 5 - GLS Underperforms DHL by 20 Percentage Points
 
 **The number:** On-time delivery rates by carrier:
 
@@ -101,7 +101,7 @@ Three operational risks were identified: **cold-chain delivery underperformance*
 
 ---
 
-### Finding 6 — Cold-Chain Shipments Run 14 Points Below Standard OTIF
+### Finding 6 - Cold-Chain Shipments Run 14 Points Below Standard OTIF
 
 **The number:**
 - Standard shipment OTIF: **~81%**
@@ -115,7 +115,7 @@ Three operational risks were identified: **cold-chain delivery underperformance*
 
 ---
 
-### Finding 7 — Medical Devices: #1 Revenue, #1 Returns
+### Finding 7 - Medical Devices: #1 Revenue, #1 Returns
 
 **The number:**
 - Medical Devices revenue: **€73.1M (27.4% of total revenue)**
@@ -127,7 +127,7 @@ Three operational risks were identified: **cold-chain delivery underperformance*
 
 ---
 
-### Finding 8 — DE Dominates at 72% of Revenue; AT and NL Are Comparable Growth Markets
+### Finding 8 - DE Dominates at 72% of Revenue; AT and NL Are Comparable Growth Markets
 
 **The number:** Revenue distribution by country:
 
@@ -146,17 +146,6 @@ Three operational risks were identified: **cold-chain delivery underperformance*
 
 ---
 
-## 📈 What I'd Build Next
-
-If I had three more weeks on this project:
-
-1. **Patient churn predictive model** — logistic regression on RFM features to predict 90-day churn risk
-2. **Carrier cost vs reliability optimization** — linear programming to find optimal volume allocation across carriers given a cost budget and OTIF target
-3. **E-Rezept funnel deep-dive** — segment the remaining 8% paper holdouts by age, region, and insurance to design targeted conversion campaigns
-4. **Demand forecasting** — ARIMA/Prophet model on weekly category demand to inform inventory planning, especially for Q4 cold/flu surge
-
----
-
 ## ⚠️ Methodology Notes
 
 - **Synthetic data:** This project uses Python-generated synthetic data modeled on real online pharmacy operations (Redcare, Shop Apotheke, DocMorris). Numbers are illustrative; methodology is production-grade.
@@ -166,4 +155,4 @@ If I had three more weeks on this project:
 
 ---
 
-*Document prepared as part of the PharmaFlow Analytics project — end-to-end analysis using SQL, Python, and Tableau.*
+*Document prepared as part of the PharmaFlow Analytics project - end-to-end analysis using SQL, Python, and Tableau.*
