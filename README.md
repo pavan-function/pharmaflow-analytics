@@ -2,7 +2,7 @@
 
 > **End-to-end analytics on a 10.8-million-row synthetic dataset modeling a Redcare / Shop Apotheke-style online pharmacy operating across Germany, Austria, Switzerland, and the Netherlands.**
 
-![SQL](https://img.shields.io/badge/SQL-DuckDB-blue) ![Python](https://img.shields.io/badge/Python-pandas%2Bscipy-green) ![Tableau](https://img.shields.io/badge/Tableau-Public-orange) ![Status](https://img.shields.io/badge/Status-Complete-success) ![Domain](https://img.shields.io/badge/Domain-Pharma%20E--Commerce-red)
+![SQL](https://img.shields.io/badge/SQL-DuckDB-blue) ![Python](https://img.shields.io/badge/Python-pandas%2Bnumpy-green) ![Tableau](https://img.shields.io/badge/Tableau-Public-orange) ![Status](https://img.shields.io/badge/Status-Complete-success) ![Domain](https://img.shields.io/badge/Domain-Pharma%20E--Commerce-red)
 
 ---
 
