@@ -8,9 +8,9 @@
 
 ## 🎯 Project Summary
 
-PharmaFlow Analytics is a portfolio project simulating a full-stack analyst workflow for an online pharmacy operating across the DACH region. Using a synthetic dataset of **10.8M rows across 9 relational tables**, the project demonstrates end-to-end capabilities: data generation → SQL analysis → Python statistical analysis → business insights → interactive Tableau dashboards.
+PharmaFlow Analytics is a portfolio project simulating a full-stack analyst workflow for an online pharmacy operating across the DACH region. Using a synthetic dataset of **10.8M rows across 9 relational tables**, the project demonstrates end-to-end capabilities: data generation -> SQL analysis -> Python statistical analysis -> business insights -> interactive Tableau dashboards.
 
-The analysis is framed around the operational and commercial questions a real pharmacy analyst would face — patient lifetime value, prescription processing efficiency, cold-chain delivery performance, carrier reliability, and the **E-Rezept (electronic prescription) adoption story** that is reshaping German pharmacy in 2024–2026.
+The analysis is framed around the operational and commercial questions a real pharmacy analyst would face like patient lifetime value, prescription processing efficiency, cold-chain delivery performance, carrier reliability, and the **E-Rezept (electronic prescription) adoption story** that is reshaping German pharmacy in 2024–2026.
 
 ---
 
@@ -18,12 +18,12 @@ The analysis is framed around the operational and commercial questions a real ph
 
 | KPI | Value | Why It Matters |
 |---|---|---|
-| Total Revenue (3-year) | **€266.4M** | GMV across delivered orders Jan 2023 – Dec 2025 |
+| Total Revenue (3-year) | **€266.4M** | GMV across delivered orders Jan 2023 - Dec 2025 |
 | Total Orders | **1,939,990** | Excludes cancellations |
 | Active Patients | **384,394** | Patients with ≥1 delivered order |
 | Average Order Value | **€137.32** | Strong vs pharma benchmarks |
 | Rx Revenue Share | **38.4%** | Prescription orders driving stable revenue |
-| **E-Rezept Adoption (2025)** | **91.9%** | Up from 5.0% in 2023 — the mandate story |
+| **E-Rezept Adoption (2025)** | **91.9%** | Up from 5.0% in 2023 |
 | Overall On-Time Delivery | **80.6%** | Above 80% industry target |
 | Cold-Chain On-Time | **66.6%** | 14-point gap = identified operational risk |
 | Return Rate | **4.13%** | Well below e-commerce benchmark |
@@ -34,13 +34,13 @@ The analysis is framed around the operational and commercial questions a real ph
 
 | Dashboard | What It Shows | Link |
 |---|---|---|
-| **Sales & Patient Performance** | Revenue, AOV, patient segments (RFM), geography | [View on Tableau Public →](https://public.tableau.com/views/PharmaFlowAnalytics/Dashboard_Sales) |
-| **Operations & E-Rezept** | OTIF, carrier performance, fulfillment centers, prescription mix | [View on Tableau Public →](https://public.tableau.com/views/PharmaFlowAnalytics/Dashboard_Operations) |
+| **Sales & Patient Performance** | Revenue, AOV, patient segments (RFM), geography | [View on Tableau Public](https://public.tableau.com/views/PharmaFlowAnalytics/Dashboard_Sales) |
+| **Operations & E-Rezept** | OTIF, carrier performance, fulfillment centers, prescription mix | [View on Tableau Public](https://public.tableau.com/views/PharmaFlowAnalytics/Dashboard_Operations) |
 
-### 📸 Dashboard 1 — Sales & Patient Performance
+### 📸 Dashboard 1 - Sales & Patient Performance
 ![Sales Dashboard](05_tableau/dashboard_sales.png)
 
-### 📸 Dashboard 2 — Operations & E-Rezept
+### 📸 Dashboard 2 - Operations & E-Rezept
 ![Operations Dashboard](05_tableau/dashboard_operations.png)
 
 ---
@@ -51,8 +51,8 @@ The analysis is framed around the operational and commercial questions a real ph
 
 | # | Finding | Key Number |
 |---|---|---|
-| 1 | E-Rezept adoption exploded 18× in 24 months | 5% → 92% |
-| 2 | E-Rezept cuts prescription processing time by 71% | 14h → 4h |
+| 1 | E-Rezept adoption exploded 18× in 24 months | 5% -> 92% |
+| 2 | E-Rezept cuts prescription processing time by 71% | 14h -> 4h |
 | 3 | Top 20% of patients drive 47% of revenue | €124.4M from 76K patients |
 | 4 | Chronic patients are 3× more valuable than acute | €1,249 vs €416 LTV |
 | 5 | GLS underperforms DHL by 20 percentage points | 85.6% vs 65.7% OTIF |
@@ -110,10 +110,10 @@ pharmaflow-analytics/
 
 ## 🚀 How to Reproduce This Project
 
-1. **Generate the data** — Open `01_data_generation/PharmaFlow_01_DataGeneration.ipynb` in Google Colab. Run all cells. Output: 9 CSV files (~450 MB total).
-2. **Run SQL analysis** — Open `02_sql_analysis/PharmaFlow_02_SQL_Analysis.ipynb`. Run all 18 queries against the generated data in DuckDB.
-3. **Run Python analysis** — Open `03_python_analysis/PharmaFlow_03_Python_Analysis.ipynb`. Generates charts + Tableau-ready aggregated CSVs.
-4. **View dashboards** — Open the [Tableau Public links above](#-live-tableau-dashboards).
+1. **Generate the data** - Open `01_data_generation/PharmaFlow_01_DataGeneration.ipynb` in Google Colab. Run all cells. Output: 9 CSV files (~450 MB total).
+2. **Run SQL analysis** - Open `02_sql_analysis/PharmaFlow_02_SQL_Analysis.ipynb`. Run all 18 queries against the generated data in DuckDB.
+3. **Run Python analysis** - Open `03_python_analysis/PharmaFlow_03_Python_Analysis.ipynb`. Generates charts + Tableau-ready aggregated CSVs.
+4. **View dashboards** - Open the [Tableau Public links above](#-live-tableau-dashboards).
 
 > Total runtime: ~20 minutes on Google Colab CPU runtime.
 
@@ -121,11 +121,11 @@ pharmaflow-analytics/
 
 ## 💡 What This Project Demonstrates
 
-- **End-to-end analyst workflow** — data engineering → SQL → Python → BI, with each layer documented
-- **Domain understanding** — DACH pharmacy regulations (E-Rezept), cold-chain logistics, Rx vs OTC operations
-- **Statistical rigor** — t-tests for significance, RFM segmentation, LTV cohort analysis
-- **Business framing** — every finding includes a recommendation, not just a number
-- **Production discipline** — version control, reproducible notebooks, data dictionary, modular SQL files
+- **End-to-end analyst workflow** - data engineering -> SQL -> Python -> Tableau, with each layer documented
+- **Domain understanding** - DACH pharmacy regulations (E-Rezept), cold-chain logistics, Rx vs OTC operations
+- **Statistical rigor** - t-tests for significance, RFM segmentation, LTV cohort analysis
+- **Business framing** - every finding includes a recommendation, not just a number
+- **Production discipline** - version control, reproducible notebooks, data dictionary, modular SQL files
 
 ---
 
@@ -137,7 +137,7 @@ This project uses **synthetic data generated with Python**. It is modeled on rea
 
 ## 👤 Author
 
-**Pavan Raj Kotagiri** — Aspiring Data / Business / Supply Chain Analyst (Germany)
+**Pavan Raj Kotagiri** - Aspiring Data / Business / Supply Chain Analyst (Germany)
 
 - 💼 [LinkedIn](https://linkedin.com/in/pavanrajkotagiri)
 - 🌐 [Tableau Public Profile](https://public.tableau.com/app/profile/pavan.raj.kotagiri)
