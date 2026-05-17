@@ -1,16 +1,16 @@
 # PharmaFlow Analytics - Business Insights
 
 > **Analysis period:** January 2023 – December 2025
-> **Dataset:** 10.8M rows across 9 relational tables — 1.94M delivered orders, 384K active patients, 15K SKUs, 1.96M shipments across DE, AT, CH, NL
+> **Dataset:** 10.8M rows across 9 relational tables - 1.94M delivered orders, 384K active patients, 15K SKUs, 1.96M shipments across Germany(DE), Austria(AT), Switzerland(CH), Netherlands(NL)
 > **Methodology:** SQL aggregation (DuckDB) + Python statistical analysis (pandas, scipy)
 
 ---
 
 ## Executive Summary
 
-PharmaFlow operates a profitable, growth-stage online pharmacy across the DACH region with **€266.4M in three-year GMV**, **80.6% on-time delivery**, and a **4.13% return rate** — well below e-commerce industry norms.
+PharmaFlow operates a profitable, growth-stage online pharmacy across the DACH region with **€266.4M in three-year GMV**, **80.6% on-time delivery**, and a **4.13% return rate** well below e-commerce industry norms.
 
-The single most important strategic shift in the analysis window is the **E-Rezept (electronic prescription) adoption curve: 5% in 2023 → 92% in 2025**, driven by the German E-Rezept mandate. This shift is already cutting prescription processing time by **71%** and is the foundation of every operational gain forecasted below.
+The single most important strategic shift in the analysis window is the **E-Rezept (electronic prescription) adoption curve: 5% in 2023 to 92% in 2025**, driven by the German E-Rezept mandate. This shift is already cutting prescription processing time by **71%** and is the foundation of every operational gain forecasted below.
 
 Three operational risks were identified: **cold-chain delivery underperformance**, **carrier reliability variance**, and **Medical Devices return concentration**. Each is quantified below with a recommended action.
 
@@ -36,11 +36,11 @@ Three operational risks were identified: **cold-chain delivery underperformance*
 
 ### Finding 1 - E-Rezept Adoption Exploded 18× in 24 Months
 
-**The number:** Prescription orders using E-Rezept grew from **5.0% in 2023 → 60.0% in 2024 → 91.9% in 2025**.
+**The number:** Prescription orders using E-Rezept grew from **5.0% in 2023 to 60.0% in 2024 to 91.9% in 2025**.
 
 **Why it matters:** The German E-Rezept mandate (effective January 2024) reshaped prescription dispensing. PharmaFlow's adoption curve mirrors the national rollout, confirming the platform is fully aligned with regulatory direction. Patients who don't adopt E-Rezept by mid-2026 will be statistically rare (<10%).
 
-**Recommendation:** Invest in tooling for the remaining ~8% paper-prescription tail — these are likely elderly patients or those with non-digital insurance providers. A targeted onboarding campaign could close most of this gap within 12 months.
+**Recommendation:** Invest in tooling for the remaining ~8% paper-prescription tail where these are likely elderly patients or those with non-digital insurance providers. A targeted onboarding campaign could close most of this gap within 12 months.
 
 ---
 
@@ -63,7 +63,7 @@ Three operational risks were identified: **cold-chain delivery underperformance*
 
 **Why it matters:** Pareto isn't quite holding (it's 47/20, not 80/20), but the concentration is still material. Losing one Champion patient costs roughly the same as acquiring ~3 average patients. CRM and retention investment in this top quintile yields disproportionate return.
 
-**Recommendation:** Build a dedicated VIP service for the top 20% — priority dispatch, free cold-chain shipping, dedicated pharmacist hotline. Cost: low. Retention upside: high.
+**Recommendation:** Build a dedicated VIP service for the top 20% with priority dispatch, free cold-chain shipping, dedicated pharmacist hotline. Cost: low. Retention upside: high.
 
 ---
 
@@ -74,7 +74,7 @@ Three operational risks were identified: **cold-chain delivery underperformance*
 - Acute patient avg lifetime value: **€416.05**
 - **Multiplier: 3.0×**
 
-**Why it matters:** Chronic patients (cardiovascular, diabetic, respiratory, mental health) reorder predictably — they need repeat prescriptions for life-managing medications. They represent stable, forecastable revenue. Acute patients are unpredictable, one-off transactional.
+**Why it matters:** Chronic patients (cardiovascular, diabetic, respiratory, mental health) reorder predictably because they need repeat prescriptions for life-managing medications. They represent stable, forecastable revenue. Acute patients are unpredictable, one-off transactional.
 
 **Recommendation:** Acquisition marketing should index chronic-condition keywords and partner channels (chronic disease patient associations, GP networks). Use medication category as a leading indicator: any first order for cardio/diabetes/respiratory Rx flags a high-LTV cohort.
 
@@ -109,7 +109,7 @@ Three operational risks were identified: **cold-chain delivery underperformance*
 - Gap: **~14 percentage points**
 - Cold-chain volume: ~157,000 shipments (8% of total)
 
-**Why it matters:** Cold-chain shipments carry the highest-value products (insulin, biologics, certain dermatology Rx) and the highest-stakes patient impact. A late insulin delivery isn't just a service issue — it's a patient safety issue. The 14-point gap is operationally significant.
+**Why it matters:** Cold-chain shipments carry the highest-value products (insulin, biologics, certain dermatology Rx) and the highest-stakes patient impact. A late insulin delivery isn't just a service issue but it's a patient safety issue. The 14-point gap is operationally significant.
 
 **Recommendation:** Audit the cold-chain handoff process at each fulfillment center. Sevenum and Köln (cold-chain-enabled FCs) likely concentrate this issue. Investigate carrier pickup windows, refrigerated truck availability, and packaging dwell time. Target: close the gap to <8 points within two quarters.
 
@@ -123,7 +123,7 @@ Three operational risks were identified: **cold-chain delivery underperformance*
 
 **Why it matters:** Medical Devices is simultaneously the most valuable category and the most return-prone. Each return on a high-AOV device (avg €168 per line item) costs more than 3 returns on a low-AOV OTC item. The category needs targeted intervention: better product descriptions, more accurate sizing guides, and clearer return-prevention messaging at checkout.
 
-**Recommendation:** Build a category-specific UX improvement program — enriched product imagery, video demos, decision-support quizzes. Reducing the return rate from 9.3% to 7.5% would prevent ~6,800 returns and protect ~€1.1M in shipping/refund costs annually.
+**Recommendation:** Build a category-specific UX improvement program - enriched product imagery, video demos, decision-support quizzes. Reducing the return rate from 9.3% to 7.5% would prevent ~6,800 returns and protect ~€1.1M in shipping/refund costs annually.
 
 ---
 
@@ -142,7 +142,7 @@ Three operational risks were identified: **cold-chain delivery underperformance*
 
 **Why it matters:** PharmaFlow is functionally a German company with three small international markets. AT, NL, and CH combined deliver less than 28% of revenue despite being three separate operations with their own regulatory regimes, insurance integrations, and logistics. The economics of those markets need scrutiny: is the per-market overhead justified by their absolute contribution?
 
-**Recommendation:** Run a profitability analysis per country (revenue minus FC operating cost, regulatory compliance cost, marketing spend). If AT or CH is loss-making at current volumes, either consolidate operations into a regional hub (e.g., serve AT from München FC) or set a 24-month growth target — invest aggressively or sunset cleanly.
+**Recommendation:** Run a profitability analysis per country (revenue minus FC operating cost, regulatory compliance cost, marketing spend). If Austria or Switzerland is loss-making at current volumes, either consolidate operations into a regional hub (e.g., serve AT from München FC) or set a 24-month growth target to invest aggressively or sunset cleanly.
 
 ---
 
