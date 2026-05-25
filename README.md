@@ -1,4 +1,4 @@
-# 💊 PharmaFlow Analytics - Online Pharmacy Operations & Patient Insights for the DACH Market
+#  PharmaFlow Analytics - Online Pharmacy Operations & Patient Insights for the DACH Market
 
 > **End-to-end analytics on a 10.8-million-row synthetic dataset modeling a Redcare / Shop Apotheke-style online pharmacy operating across Germany, Austria, Switzerland, and the Netherlands.**
 
@@ -6,7 +6,7 @@
 
 ---
 
-## 🎯 Project Summary
+##  Project Summary
 
 PharmaFlow Analytics is a portfolio project simulating a full-stack analyst workflow for an online pharmacy operating across the DACH region. Using a synthetic dataset of **10.8M rows across 9 relational tables**, the project covers the end-to-end workflow: data generation -> SQL analysis -> Python statistical analysis -> business insights -> interactive Tableau dashboards.
 
@@ -14,7 +14,7 @@ The analysis is framed around the operational and commercial questions a real ph
 
 ---
 
-## 📊 Headline KPIs
+##  Headline KPIs
 
 | KPI | Value | Why It Matters |
 |---|---|---|
@@ -30,7 +30,7 @@ The analysis is framed around the operational and commercial questions a real ph
 
 ---
 
-## 🌐 Live Tableau Dashboards
+##  Live Tableau Dashboards
 
 | Dashboard | What It Shows | Link |
 |---|---|---|
@@ -45,7 +45,7 @@ The analysis is framed around the operational and commercial questions a real ph
 
 ---
 
-## 🔍 8 Key Findings
+##  8 Key Findings
 
 > Full analytical writeup: **[BUSINESS_INSIGHTS.md](BUSINESS_INSIGHTS.md)**
 
@@ -62,7 +62,7 @@ The analysis is framed around the operational and commercial questions a real ph
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Layer | Tools |
 |---|---|
@@ -75,7 +75,7 @@ The analysis is framed around the operational and commercial questions a real ph
 
 ---
 
-## 📁 Repository Structure
+##  Repository Structure
 
 ```
 pharmaflow-analytics/
@@ -108,7 +108,7 @@ pharmaflow-analytics/
 
 ---
 
-## 🚀 How to Reproduce This Project
+##  How to Reproduce This Project
 
 1. **Generate the data** - Open `01_data_generation/PharmaFlow_01_DataGeneration.ipynb` in Google Colab. Run all cells. Output: 9 CSV files (~450 MB total).
 2. **Run SQL analysis** - Open `02_sql_analysis/PharmaFlow_02_SQL_Analysis.ipynb`. Run all 18 queries against the generated data in DuckDB.
@@ -119,7 +119,7 @@ pharmaflow-analytics/
 
 ---
 
-## 💡 What This Project Shows
+##  What This Project Shows
 
 - **End-to-end analyst workflow** - data engineering -> SQL -> Python -> Tableau, with each layer documented
 - **Domain understanding** - DACH pharmacy regulations (E-Rezept), cold-chain logistics, Rx vs OTC operations
@@ -129,19 +129,19 @@ pharmaflow-analytics/
 
 ---
 
-## ⚠️ Disclaimer
+##  Disclaimer
 
 This project uses **synthetic data generated with Python**. It is modeled on real online-pharmacy business operations (Redcare, Shop Apotheke, DocMorris) but does not contain real patient, prescription, or company data. Numbers are illustrative; the workflow follows real industry practice.
 
 ---
 
-## 👤 Author
+##  Author
 
 **Pavan Raj Kotagiri** - Aspiring Data / Business / Supply Chain Analyst (Germany)
 
-- 💼 [LinkedIn](https://linkedin.com/in/pavanrajkotagiri)
-- 🌐 [Tableau Public Profile](https://public.tableau.com/app/profile/pavan.raj.kotagiri)
-- 💻 [GitHub](https://github.com/pavan-function)
+- [LinkedIn](https://linkedin.com/in/pavanrajkotagiri)
+- [Tableau Public Profile](https://public.tableau.com/app/profile/pavan.raj.kotagiri)
+- [GitHub](https://github.com/pavan-function)
 
 ---
 
